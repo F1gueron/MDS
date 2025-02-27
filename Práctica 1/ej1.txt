@@ -7,7 +7,9 @@ Comentar que el programa está implementado en C, aunque la extensión es para c
 	
 2.java - 1.1.4
 
-- Estoy borracho o algo pero no entiendo qué está mal. Hay un comentario en una línea diciendo que hay un bug pero esa función no se usa pa nada. 
+- Ante un error te imprime demasiada info...
+- Manejo poco seguro de archivos...
+- ...
 
 3.py - 1.1.5
 
