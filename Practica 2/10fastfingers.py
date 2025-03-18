@@ -14,3 +14,7 @@ for i in range(1, 21):
 
 
 time.sleep(30) # Sleep para ver la flag
+
+driver.quit()
+
+# Flag => URJC{f1ng3rs_tr41n3d!}
