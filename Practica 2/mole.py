@@ -18,3 +18,5 @@ while int(driver.find_element(By.ID, 'score').text) <= 10000:
 time.sleep(10)
 
 driver.quit()
+
+# Flag => URJC{W1111111N333RRR}
