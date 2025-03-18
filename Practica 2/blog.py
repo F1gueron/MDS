@@ -33,8 +33,8 @@ while hrefs:
         try:
             #page_text = driver.page_source # Descomentar esto para buscar en el código fuente de cada página
             page_text = driver.find_element(By.CLASS_NAME, "article-post").text # Para buscar únicamente en el cuerpo del post
-            #count += len(re.findall(r"\bURJC\b", page_text)) # Para buscar sólo lo que tenga URJC o URJC.
-            count += len(re.findall(r"\w*URJC\w*[.,]*", page_text)) # Para buscar URJC y otras variaciones como asdasdURJC o URJCasdad
+            count += len(re.findall(r"\bURJC\b", page_text)) # Para buscar sólo lo que tenga URJC o URJC.
+            #count += len(re.findall(r"\w*URJC\w*[.,]*", page_text)) # Para buscar URJC y otras variaciones como asdasdURJC o URJCasdad
         except Exception as e:
             pass
 
