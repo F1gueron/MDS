@@ -19,10 +19,11 @@ public class Main {
         driver.get("https://r1-ctf-vulnerable.numa.host/");
 
         List<WebElement> buttons = driver.findElements(By.className("btn-outline-primary"));
+        seed = System.currentTimeMillis(); // Creamos la nuestra cercana a la real
 
         buttons.get(1).click(); // Reseteamos la seed
 
-        seed = System.currentTimeMillis(); // Creamos la nuestra cercana a la real
+        Thread.sleep(200);
         Random rand = new Random(seed);
         first_try = rand.nextInt(MAX_NUMBER); // primer número a introducir
 
@@ -43,7 +44,7 @@ public class Main {
         /* Bruteforce de la seed */
         System.out.println("Starting checks with " + number);
         while (Integer.parseInt(number)!= first_try) {
-            seed = seed -1 ;
+            seed = seed + 1 ;
             rand = new Random(seed);
             first_try = rand.nextInt(MAX_NUMBER);
 
